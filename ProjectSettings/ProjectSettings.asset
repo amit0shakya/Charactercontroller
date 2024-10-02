@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: db0785592a16467419456304f0f6ad51
+  productGUID: 3a96756a8e916a74a8a1968ecb3927a6
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Character Movement
+  productName: Player Controller
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -677,14 +677,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Character Movement
+  metroPackageName: Player Controller
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Character Movement
+  metroApplicationDescription: Player Controller
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -754,10 +754,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: db00c658-293c-4155-9d06-1f50f75b2b64
+  cloudProjectId: 089451ab-63a5-442d-92d3-f6e82bd64c05
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Character Movement
+  projectName: Player Controller
   organizationId: amitshakya
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
