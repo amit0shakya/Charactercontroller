@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float speed;
+
     void Start()
     {
         
@@ -18,8 +20,9 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 movementDirection  = new Vector3(horizontalInput, 0, verticalInput);
 
-        transform.Translate(movementDirection * Time.deltaTime);
+        //This will fix character movement issues on diagnal movement;
+        movementDirection.Normalize();
 
-        Debug.Log("update");
+        transform.Translate(movementDirection * Time.deltaTime * speed);
     }
 }
