@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed;
-
+    public float rotationspeed;
     void Start()
     {
         
@@ -23,6 +23,18 @@ public class CharacterMovement : MonoBehaviour
         //This will fix character movement issues on diagnal movement;
         movementDirection.Normalize();
 
-        transform.Translate(movementDirection * Time.deltaTime * speed);
+        transform.Translate(movementDirection * Time.deltaTime * speed, Space.World);
+
+
+        //Check Character is Moving
+        if(movementDirection != Vector3.zero)
+        {
+            //Rotate Character Instantly
+            //transform.forward = movementDirection;
+
+            //for Character Smooth rotation
+            Quaternion toRotaion = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotaion, rotationspeed * Time.deltaTime);
+        }
     }
 }
